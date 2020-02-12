@@ -1,0 +1,7 @@
+&input
+
+    fildyn='antimonene.dyn'
+    zasr='simple'
+    flfrc='antimonene.fc'
+
+/
