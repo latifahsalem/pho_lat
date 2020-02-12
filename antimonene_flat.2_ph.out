@@ -1,0 +1,2217 @@
+
+     Program PHONON v.6.5 starts on 29Dec2019 at  6:30: 0 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     2 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =       2
+
+     Reading xml data from directory:
+
+     ./outdir/antimonene_flat.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file Sb.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  5S renormalized
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1388    1388    377               594777   594777   84080
+     Max        1391    1391    380               594782   594782   84085
+     Sum        2779    2779    757              1189559  1189559  168165
+ 
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     Reading collected, re-writing distributed wavefunctions
+
+
+     Dynamical matrices for (12,12, 1)  uniform grid of q-points
+     (  19 q-points):
+       N         xq(1)         xq(2)         xq(3) 
+       1   0.000000000   0.000000000   0.000000000
+       2   0.000000000   0.096225045   0.000000000
+       3   0.000000000   0.192450090   0.000000000
+       4   0.000000000   0.288675135   0.000000000
+       5   0.000000000   0.384900179   0.000000000
+       6   0.000000000   0.481125224   0.000000000
+       7   0.000000000  -0.577350269   0.000000000
+       8   0.083333333   0.144337567   0.000000000
+       9   0.083333333   0.240562612   0.000000000
+      10   0.083333333   0.336787657   0.000000000
+      11   0.083333333   0.433012702   0.000000000
+      12   0.083333333   0.529237747   0.000000000
+      13   0.166666667   0.288675135   0.000000000
+      14   0.166666667   0.384900179   0.000000000
+      15   0.166666667   0.481125224   0.000000000
+      16   0.166666667   0.577350269   0.000000000
+      17   0.250000000   0.433012702   0.000000000
+      18   0.250000000   0.529237747   0.000000000
+      19   0.333333333   0.577350269   0.000000000
+
+     Calculation of q =    0.0000000   0.0000000   0.0000000
+
+     Phonon Dispersion of flat antimonene                                       
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     kinetic-energy cut-off    =     110.0000  Ry
+     charge density cut-off    =     440.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    9.58590  celldm(2)=    0.00000  celldm(3)=   10.00802
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000 10.0080 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774  0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000  0.0000  0.0999 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     Sb 121.7600   tau(    1) = (    0.50000    0.28868    0.00000  )
+        2     Sb 121.7600   tau(    2) = (    0.00000    0.57735    0.00000  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0000000   0.0000000 )
+ 
+     25 Sym.Ops. (with q -> -q+G )
+
+
+     G cutoff = 1024.1386  ( 594782 G-vectors)     FFT grid: ( 72, 72,648)
+
+     number of k points=   217  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     Mode symmetry, D_6h(6/mmm) point group:
+
+
+     Atomic displacements:
+     There are   4 irreducible representations
+
+     Representation     1      1 modes -B_1g  To be done
+
+     Representation     2      2 modes -E_2g  To be done
+
+     Representation     3      1 modes -A_2u  To be done
+
+     Representation     4      2 modes -E_1u  To be done
+
+
+
+     Alpha used in Ewald sum =   2.8000
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     PHONON       :  19m48.33s CPU  41m34.62s WALL
+
+
+
+     Representation #  1 mode #   1
+
+     Self-consistent Calculation
+ 
+     Pert. #  1: Fermi energy shift (Ry) =    -1.1029E-24     0.0000E+00
+
+      iter #   1 total cpu time :  4888.3 secs   av.it.:   3.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  3.577E-10
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     1.3786E-25     0.0000E+00
+
+      iter #   2 total cpu time :  8730.2 secs   av.it.:  12.2
+      thresh= 1.891E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.333E-11
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   3 total cpu time : 13484.9 secs   av.it.:  11.8
+      thresh= 5.773E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.249E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  2 modes #   2  3
+
+     Self-consistent Calculation
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     5.7824E-19    -1.7219E-41
+     Pert. #  2: Fermi energy shift (Ry) =    -1.7347E-18     1.4349E-42
+
+      iter #   1 total cpu time : 18944.4 secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.684E-10
+ 
+     Pert. #  1: Fermi energy shift (Ry) =    -1.5902E-18     7.1746E-42
+     Pert. #  2: Fermi energy shift (Ry) =     1.0842E-18     7.8921E-42
+
+      iter #   2 total cpu time : 27009.0 secs   av.it.:  14.3
+      thresh= 1.298E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.979E-11
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     7.1746E-42
+     Pert. #  2: Fermi energy shift (Ry) =    -5.0596E-19     7.8921E-42
+
+      iter #   3 total cpu time : 35165.0 secs   av.it.:  14.5
+      thresh= 4.448E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.906E-12
+ 
+     Pert. #  1: Fermi energy shift (Ry) =    -4.3368E-19     7.1746E-42
+     Pert. #  2: Fermi energy shift (Ry) =     9.3964E-19     7.8921E-42
+
+      iter #   4 total cpu time : 44569.5 secs   av.it.:  13.8
+      thresh= 1.381E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.074E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  3 mode #   4
+
+     Self-consistent Calculation
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     1.1029E-24     0.0000E+00
+
+      iter #   1 total cpu time : 48619.4 secs   av.it.:   4.5
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  3.378E-07
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     5.5145E-25     0.0000E+00
+
+      iter #   2 total cpu time : 52298.2 secs   av.it.:  11.1
+      thresh= 5.812E-05 alpha_mix =  0.700 |ddv_scf|^2 =  7.966E-07
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   3 total cpu time : 55789.5 secs   av.it.:  10.3
+      thresh= 8.925E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.049E-10
+ 
+     Pert. #  1: Fermi energy shift (Ry) =    -6.8932E-26     0.0000E+00
+
+      iter #   4 total cpu time : 59472.7 secs   av.it.:  11.3
+      thresh= 2.247E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.914E-10
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   5 total cpu time : 62928.4 secs   av.it.:  10.1
+      thresh= 1.384E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.869E-12
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     6.8932E-26     0.0000E+00
+
+      iter #   6 total cpu time : 67401.1 secs   av.it.:  10.7
+      thresh= 1.367E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.543E-15
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  4 modes #   5  6
+
+     Self-consistent Calculation
+ 
+     Pert. #  1: Fermi energy shift (Ry) =    -1.7233E-26     0.0000E+00
+     Pert. #  2: Fermi energy shift (Ry) =    -8.6165E-27    -7.5232E-37
+
+      iter #   1 total cpu time : 73375.4 secs   av.it.:   4.3
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  8.967E-11
+ 
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+     Pert. #  2: Fermi energy shift (Ry) =    -5.1699E-26    -3.0612E-41
+
+      iter #   2 total cpu time : 81267.4 secs   av.it.:  13.8
+      thresh= 9.469E-07 alpha_mix =  0.700 |ddv_scf|^2 =  6.659E-12
+ 
+     Pert. #  1: Fermi energy shift (Ry) =    -1.7233E-26     6.1224E-41
+     Pert. #  2: Fermi energy shift (Ry) =    -1.7233E-26     1.3775E-40
+
+      iter #   3 total cpu time : 90454.8 secs   av.it.:  13.4
+      thresh= 2.581E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.053E-13
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+ 
+     Number of q in the star =    1
+     List of q in the star:
+          1   0.000000000   0.000000000   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.000000000   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =      -1.657049 [THz] =     -55.273207 [cm-1]
+     freq (    2) =      -1.657049 [THz] =     -55.273207 [cm-1]
+     freq (    3) =      -0.263400 [THz] =      -8.786074 [cm-1]
+     freq (    4) =       1.109810 [THz] =      37.019287 [cm-1]
+     freq (    5) =       4.213015 [THz] =     140.531064 [cm-1]
+     freq (    6) =       4.213015 [THz] =     140.531064 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, D_6h(6/mmm) point group:
+
+     freq (  1 -  2) =        -55.3  [cm-1]   --> E_1u            I  
+     freq (  3 -  3) =         -8.8  [cm-1]   --> A_2u            I  
+     freq (  4 -  4) =         37.0  [cm-1]   --> B_1g               
+     freq (  5 -  6) =        140.5  [cm-1]   --> E_2g            R  
+
+     Calculation of q =    0.0000000   0.0962250   0.0000000
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1388    1388    378               594777   594777   85320
+     Max        1391    1391    379               594782   594782   85331
+     Sum        2779    2779    757              1189559  1189559  170651
+ 
+
+     Title: 
+     Phonon Dispersion of flat antimonene                                       
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =        10.00
+     number of Kohn-Sham states=           19
+     kinetic-energy cutoff     =     110.0000  Ry
+     charge density cutoff     =     440.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   9.585900  celldm(2)=   0.000000  celldm(3)=  10.008017
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000  10.008017 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.099920 )  
+
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Sb             5.00   121.76000     Sb( 1.00)
+
+     24 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Sb  tau(   1) = (   0.5000000   0.2886751   0.0000000  )
+         2           Sb  tau(   2) = (   0.0000000   0.5773503   0.0000000  )
+
+     number of k points=  2352  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1189559 G-vectors     FFT dimensions: (  72,  72, 648)
+
+     Estimated max dynamical RAM per process >       1.92 GB
+
+     Estimated total dynamical RAM >       3.84 GB
+
+     The potential is recalculated from file :
+     ./outdir/_ph0/antimonene_flat.save/charge-density
+
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     Starting wfcs are    8 atomic +   11 random wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  1.00E-10,  avg # of iterations = 67.1
+
+     total cpu time spent up to now is   158504.5 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    -4.1520 ev
+
+     Writing output data file ./outdir/_ph0/antimonene_flat.save/
+
+     Phonon Dispersion of flat antimonene                                       
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     kinetic-energy cut-off    =     110.0000  Ry
+     charge density cut-off    =     440.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    9.58590  celldm(2)=    0.00000  celldm(3)=   10.00802
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000 10.0080 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774  0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000  0.0000  0.0999 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     Sb 121.7600   tau(    1) = (    0.50000    0.28868    0.00000  )
+        2     Sb 121.7600   tau(    2) = (    0.00000    0.57735    0.00000  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0962250   0.0000000 )
+ 
+      4 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1024.1386  ( 594782 G-vectors)     FFT grid: ( 72, 72,648)
+
+     number of k points=  2352  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     Mode symmetry, C_2v (mm2)  point group:
+
+
+     Atomic displacements:
+     There are   6 irreducible representations
+
+     Representation     1      1 modes -A_1  D_1  S_1  To be done
+
+     Representation     2      1 modes -A_1  D_1  S_1  To be done
+
+     Representation     3      1 modes -B_1  D_3  S_3  To be done
+
+     Representation     4      1 modes -B_1  D_3  S_3  To be done
+
+     Representation     5      1 modes -B_2  D_4  S_4  To be done
+
+     Representation     6      1 modes -B_2  D_4  S_4  To be done
+
+
+
+     Alpha used in Ewald sum =   2.8000
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     PHONON       :   2d13h57m CPU   3d 2h 7m WALL
+
+
+
+     Representation #  1 mode #   1
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :280629.3 secs   av.it.:   5.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.597E-05
+
+      iter #   2 total cpu time :304440.2 secs   av.it.:  12.6
+      thresh= 3.997E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.564E-02
+
+      iter #   3 total cpu time :324407.5 secs   av.it.:   8.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.996E-07
+
+      iter #   4 total cpu time :347286.1 secs   av.it.:  11.7
+      thresh= 4.468E-05 alpha_mix =  0.700 |ddv_scf|^2 =  8.307E-10
+
+      iter #   5 total cpu time :371789.7 secs   av.it.:  13.4
+      thresh= 2.882E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.242E-10
+
+      iter #   6 total cpu time :395597.4 secs   av.it.:  12.6
+      thresh= 1.114E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.269E-10
+
+      iter #   7 total cpu time :445295.2 secs   av.it.:   9.6
+      thresh= 1.126E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.264E-10
+
+      iter #   8 total cpu time :466410.6 secs   av.it.:  10.0
+      thresh= 2.065E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.510E-11
+
+      iter #   9 total cpu time :489700.4 secs   av.it.:  12.1
+      thresh= 3.886E-07 alpha_mix =  0.700 |ddv_scf|^2 =  9.648E-12
+
+      iter #  10 total cpu time :525488.7 secs   av.it.:  11.1
+      thresh= 3.106E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.861E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  2 mode #   2
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :561571.7 secs   av.it.:   5.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.597E-05
+
+      iter #   2 total cpu time :588294.1 secs   av.it.:  12.6
+      thresh= 3.997E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.564E-02
+
+      iter #   3 total cpu time :608340.2 secs   av.it.:   8.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.997E-07
+
+      iter #   4 total cpu time :631238.3 secs   av.it.:  11.7
+      thresh= 4.468E-05 alpha_mix =  0.700 |ddv_scf|^2 =  8.304E-10
+
+      iter #   5 total cpu time :655760.9 secs   av.it.:  13.4
+      thresh= 2.882E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.241E-10
+
+      iter #   6 total cpu time :679579.5 secs   av.it.:  12.6
+      thresh= 1.114E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.280E-10
+
+      iter #   7 total cpu time :700476.7 secs   av.it.:   9.6
+      thresh= 1.131E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.170E-10
+
+      iter #   8 total cpu time :721617.4 secs   av.it.:  10.0
+      thresh= 2.042E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.512E-11
+
+      iter #   9 total cpu time :744791.8 secs   av.it.:  12.1
+      thresh= 3.888E-07 alpha_mix =  0.700 |ddv_scf|^2 =  9.662E-12
+
+      iter #  10 total cpu time :767007.2 secs   av.it.:  11.1
+      thresh= 3.108E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.855E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  3 mode #   3
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :787073.8 secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.370E-10
+
+      iter #   2 total cpu time :812061.9 secs   av.it.:  13.8
+      thresh= 2.317E-06 alpha_mix =  0.700 |ddv_scf|^2 =  5.918E-11
+
+      iter #   3 total cpu time :838828.9 secs   av.it.:  13.9
+      thresh= 7.693E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.337E-12
+
+      iter #   4 total cpu time :863562.8 secs   av.it.:  13.5
+      thresh= 2.709E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.306E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  4 mode #   4
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :883490.2 secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.370E-10
+
+      iter #   2 total cpu time :908399.6 secs   av.it.:  13.8
+      thresh= 2.317E-06 alpha_mix =  0.700 |ddv_scf|^2 =  5.918E-11
+
+      iter #   3 total cpu time :933458.0 secs   av.it.:  13.9
+      thresh= 7.693E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.337E-12
+
+      iter #   4 total cpu time :958592.3 secs   av.it.:  13.5
+      thresh= 2.709E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.306E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  5 mode #   5
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :978243.3 secs   av.it.:   4.2
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.535E-08
+
+      iter #   2 total cpu time :******** secs   av.it.:  11.9
+      thresh= 2.353E-05 alpha_mix =  0.700 |ddv_scf|^2 =  9.243E-08
+
+      iter #   3 total cpu time :******** secs   av.it.:  11.0
+      thresh= 3.040E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.198E-10
+
+      iter #   4 total cpu time :******** secs   av.it.:  12.1
+      thresh= 1.095E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.823E-11
+
+      iter #   5 total cpu time :******** secs   av.it.:  10.6
+      thresh= 6.945E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.403E-13
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  6 mode #   6
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.2
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.535E-08
+
+      iter #   2 total cpu time :******** secs   av.it.:  11.9
+      thresh= 2.353E-05 alpha_mix =  0.700 |ddv_scf|^2 =  9.243E-08
+
+      iter #   3 total cpu time :******** secs   av.it.:  11.0
+      thresh= 3.040E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.198E-10
+
+      iter #   4 total cpu time :******** secs   av.it.:  12.1
+      thresh= 1.095E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.822E-11
+
+      iter #   5 total cpu time :******** secs   av.it.:  10.6
+      thresh= 6.944E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.425E-13
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+ 
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.096225045   0.000000000
+          2   0.000000000  -0.096225045   0.000000000
+          3  -0.083333333   0.048112522   0.000000000
+          4  -0.083333333  -0.048112522   0.000000000
+          5   0.083333333  -0.048112522   0.000000000
+          6   0.083333333   0.048112522   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.096225045   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =      -0.564272 [THz] =     -18.822101 [cm-1]
+     freq (    2) =       0.723788 [THz] =      24.142959 [cm-1]
+     freq (    3) =       0.888557 [THz] =      29.639086 [cm-1]
+     freq (    4) =       1.312071 [THz] =      43.765977 [cm-1]
+     freq (    5) =       4.164390 [THz] =     138.909108 [cm-1]
+     freq (    6) =       4.192726 [THz] =     139.854293 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_2v (mm2)  point group:
+
+     freq (  1 -  1) =        -18.8  [cm-1]   --> B_1  D_3  S_3      
+     freq (  2 -  2) =         24.1  [cm-1]   --> A_1  D_1  S_1      
+     freq (  3 -  3) =         29.6  [cm-1]   --> B_2  D_4  S_4      
+     freq (  4 -  4) =         43.8  [cm-1]   --> B_2  D_4  S_4      
+     freq (  5 -  5) =        138.9  [cm-1]   --> B_1  D_3  S_3      
+     freq (  6 -  6) =        139.9  [cm-1]   --> A_1  D_1  S_1      
+
+     Calculation of q =    0.0000000   0.1924501   0.0000000
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1388    1388    384               594777   594777   86682
+     Max        1391    1391    385               594782   594782   86707
+     Sum        2779    2779    769              1189559  1189559  173389
+ 
+
+     Title: 
+     Phonon Dispersion of flat antimonene                                       
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =        10.00
+     number of Kohn-Sham states=           19
+     kinetic-energy cutoff     =     110.0000  Ry
+     charge density cutoff     =     440.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   9.585900  celldm(2)=   0.000000  celldm(3)=  10.008017
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000  10.008017 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.099920 )  
+
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Sb             5.00   121.76000     Sb( 1.00)
+
+     24 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Sb  tau(   1) = (   0.5000000   0.2886751   0.0000000  )
+         2           Sb  tau(   2) = (   0.0000000   0.5773503   0.0000000  )
+
+     number of k points=  2352  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1189559 G-vectors     FFT dimensions: (  72,  72, 648)
+
+     Estimated max dynamical RAM per process >       1.92 GB
+
+     Estimated total dynamical RAM >       3.84 GB
+
+     The potential is recalculated from file :
+     ./outdir/_ph0/antimonene_flat.save/charge-density
+
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     Starting wfcs are    8 atomic +   11 random wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  1.00E-10,  avg # of iterations = 66.9
+
+     total cpu time spent up to now is   318395.7 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    -4.1520 ev
+
+     Writing output data file ./outdir/_ph0/antimonene_flat.save/
+
+     Phonon Dispersion of flat antimonene                                       
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     kinetic-energy cut-off    =     110.0000  Ry
+     charge density cut-off    =     440.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    9.58590  celldm(2)=    0.00000  celldm(3)=   10.00802
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000 10.0080 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774  0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000  0.0000  0.0999 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     Sb 121.7600   tau(    1) = (    0.50000    0.28868    0.00000  )
+        2     Sb 121.7600   tau(    2) = (    0.00000    0.57735    0.00000  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.1924501   0.0000000 )
+ 
+      4 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1024.1386  ( 594782 G-vectors)     FFT grid: ( 72, 72,648)
+
+     number of k points=  2352  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     Mode symmetry, C_2v (mm2)  point group:
+
+
+     Atomic displacements:
+     There are   6 irreducible representations
+
+     Representation     1      1 modes -A_1  D_1  S_1  To be done
+
+     Representation     2      1 modes -A_1  D_1  S_1  To be done
+
+     Representation     3      1 modes -B_1  D_3  S_3  To be done
+
+     Representation     4      1 modes -B_1  D_3  S_3  To be done
+
+     Representation     5      1 modes -B_2  D_4  S_4  To be done
+
+     Representation     6      1 modes -B_2  D_4  S_4  To be done
+
+
+
+     Alpha used in Ewald sum =   2.8000
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     PHONON       :  10d13h48m CPU  15d17h 5m WALL
+
+
+
+     Representation #  1 mode #   1
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   5.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.462E-06
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.4
+      thresh= 1.209E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.833E-04
+
+      iter #   3 total cpu time :******** secs   av.it.:  10.1
+      thresh= 1.683E-03 alpha_mix =  0.700 |ddv_scf|^2 =  5.005E-09
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.9
+      thresh= 7.075E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.795E-09
+
+      iter #   5 total cpu time :******** secs   av.it.:  13.1
+      thresh= 5.287E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.953E-11
+
+      iter #   6 total cpu time :******** secs   av.it.:  12.9
+      thresh= 5.434E-07 alpha_mix =  0.700 |ddv_scf|^2 =  8.006E-13
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  2 mode #   2
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   5.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.462E-06
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.4
+      thresh= 1.209E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.833E-04
+
+      iter #   3 total cpu time :******** secs   av.it.:  10.1
+      thresh= 1.683E-03 alpha_mix =  0.700 |ddv_scf|^2 =  5.005E-09
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.8
+      thresh= 7.074E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.795E-09
+
+      iter #   5 total cpu time :******** secs   av.it.:  13.1
+      thresh= 5.287E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.951E-11
+
+      iter #   6 total cpu time :******** secs   av.it.:  12.9
+      thresh= 5.433E-07 alpha_mix =  0.700 |ddv_scf|^2 =  8.006E-13
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  3 mode #   3
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.936E-10
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.8
+      thresh= 2.436E-06 alpha_mix =  0.700 |ddv_scf|^2 =  7.678E-11
+
+      iter #   3 total cpu time :******** secs   av.it.:  13.8
+      thresh= 8.762E-07 alpha_mix =  0.700 |ddv_scf|^2 =  8.496E-12
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.5
+      thresh= 2.915E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.058E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  4 mode #   4
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.936E-10
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.8
+      thresh= 2.436E-06 alpha_mix =  0.700 |ddv_scf|^2 =  7.678E-11
+
+      iter #   3 total cpu time :******** secs   av.it.:  13.8
+      thresh= 8.762E-07 alpha_mix =  0.700 |ddv_scf|^2 =  8.496E-12
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.5
+      thresh= 2.915E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.058E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  5 mode #   5
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.3
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.508E-08
+
+      iter #   2 total cpu time :******** secs   av.it.:  12.4
+      thresh= 1.228E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.487E-08
+
+      iter #   3 total cpu time :******** secs   av.it.:  11.6
+      thresh= 1.219E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.641E-11
+
+      iter #   4 total cpu time :******** secs   av.it.:  12.5
+      thresh= 7.511E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.041E-11
+
+      iter #   5 total cpu time :******** secs   av.it.:  11.5
+      thresh= 3.227E-07 alpha_mix =  0.700 |ddv_scf|^2 =  9.109E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  6 mode #   6
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.3
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.508E-08
+
+      iter #   2 total cpu time :******** secs   av.it.:  12.4
+      thresh= 1.228E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.487E-08
+
+      iter #   3 total cpu time :******** secs   av.it.:  11.6
+      thresh= 1.219E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.642E-11
+
+      iter #   4 total cpu time :******** secs   av.it.:  12.5
+      thresh= 7.511E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.041E-11
+
+      iter #   5 total cpu time :******** secs   av.it.:  11.4
+      thresh= 3.227E-07 alpha_mix =  0.700 |ddv_scf|^2 =  9.187E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+ 
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.192450090   0.000000000
+          2   0.000000000  -0.192450090   0.000000000
+          3  -0.166666667   0.096225045   0.000000000
+          4  -0.166666667  -0.096225045   0.000000000
+          5   0.166666667  -0.096225045   0.000000000
+          6   0.166666667   0.096225045   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.192450090   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =      -0.517526 [THz] =     -17.262795 [cm-1]
+     freq (    2) =       0.731908 [THz] =      24.413824 [cm-1]
+     freq (    3) =       0.747199 [THz] =      24.923865 [cm-1]
+     freq (    4) =       1.015420 [THz] =      33.870762 [cm-1]
+     freq (    5) =       3.989631 [THz] =     133.079775 [cm-1]
+     freq (    6) =       4.041422 [THz] =     134.807333 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_2v (mm2)  point group:
+
+     freq (  1 -  1) =        -17.3  [cm-1]   --> B_1  D_3  S_3      
+     freq (  2 -  2) =         24.4  [cm-1]   --> B_2  D_4  S_4      
+     freq (  3 -  3) =         24.9  [cm-1]   --> A_1  D_1  S_1      
+     freq (  4 -  4) =         33.9  [cm-1]   --> B_2  D_4  S_4      
+     freq (  5 -  5) =        133.1  [cm-1]   --> B_1  D_3  S_3      
+     freq (  6 -  6) =        134.8  [cm-1]   --> A_1  D_1  S_1      
+
+     Calculation of q =    0.0000000   0.2886751   0.0000000
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1388    1388    384               594777   594777   87930
+     Max        1391    1391    385               594782   594782   87969
+     Sum        2779    2779    769              1189559  1189559  175899
+ 
+
+     Title: 
+     Phonon Dispersion of flat antimonene                                       
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =        10.00
+     number of Kohn-Sham states=           19
+     kinetic-energy cutoff     =     110.0000  Ry
+     charge density cutoff     =     440.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   9.585900  celldm(2)=   0.000000  celldm(3)=  10.008017
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000  10.008017 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.099920 )  
+
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Sb             5.00   121.76000     Sb( 1.00)
+
+     24 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Sb  tau(   1) = (   0.5000000   0.2886751   0.0000000  )
+         2           Sb  tau(   2) = (   0.0000000   0.5773503   0.0000000  )
+
+     number of k points=  2352  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1189559 G-vectors     FFT dimensions: (  72,  72, 648)
+
+     Estimated max dynamical RAM per process >       1.92 GB
+
+     Estimated total dynamical RAM >       3.84 GB
+
+     The potential is recalculated from file :
+     ./outdir/_ph0/antimonene_flat.save/charge-density
+
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     Starting wfcs are    8 atomic +   11 random wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  1.00E-10,  avg # of iterations = 67.0
+
+     total cpu time spent up to now is   479122.6 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    -4.1520 ev
+
+     Writing output data file ./outdir/_ph0/antimonene_flat.save/
+
+     Phonon Dispersion of flat antimonene                                       
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     kinetic-energy cut-off    =     110.0000  Ry
+     charge density cut-off    =     440.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    9.58590  celldm(2)=    0.00000  celldm(3)=   10.00802
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000 10.0080 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774  0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000  0.0000  0.0999 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     Sb 121.7600   tau(    1) = (    0.50000    0.28868    0.00000  )
+        2     Sb 121.7600   tau(    2) = (    0.00000    0.57735    0.00000  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.2886751   0.0000000 )
+ 
+      4 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1024.1386  ( 594782 G-vectors)     FFT grid: ( 72, 72,648)
+
+     number of k points=  2352  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     Mode symmetry, C_2v (mm2)  point group:
+
+
+     Atomic displacements:
+     There are   6 irreducible representations
+
+     Representation     1      1 modes -A_1  D_1  S_1  To be done
+
+     Representation     2      1 modes -A_1  D_1  S_1  To be done
+
+     Representation     3      1 modes -B_1  D_3  S_3  To be done
+
+     Representation     4      1 modes -B_1  D_3  S_3  To be done
+
+     Representation     5      1 modes -B_2  D_4  S_4  To be done
+
+     Representation     6      1 modes -B_2  D_4  S_4  To be done
+
+
+
+     Alpha used in Ewald sum =   2.8000
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     PHONON       :  17d 9h31m CPU  25d21h40m WALL
+
+
+
+     Representation #  1 mode #   1
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   5.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  3.292E-07
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.8
+      thresh= 5.738E-05 alpha_mix =  0.700 |ddv_scf|^2 =  2.332E-05
+
+      iter #   3 total cpu time :******** secs   av.it.:  11.0
+      thresh= 4.829E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.964E-09
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.8
+      thresh= 6.296E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.187E-09
+
+      iter #   5 total cpu time :******** secs   av.it.:  13.1
+      thresh= 4.677E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.859E-11
+
+      iter #   6 total cpu time :******** secs   av.it.:  13.3
+      thresh= 4.312E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.112E-12
+
+      iter #   7 total cpu time :******** secs   av.it.:  13.3
+      thresh= 1.054E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.363E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  2 mode #   2
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   5.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  3.292E-07
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.8
+      thresh= 5.738E-05 alpha_mix =  0.700 |ddv_scf|^2 =  2.332E-05
+
+      iter #   3 total cpu time :******** secs   av.it.:  11.0
+      thresh= 4.829E-04 alpha_mix =  0.700 |ddv_scf|^2 =  3.964E-09
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.8
+      thresh= 6.296E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.187E-09
+
+      iter #   5 total cpu time :******** secs   av.it.:  13.1
+      thresh= 4.677E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.859E-11
+
+      iter #   6 total cpu time :******** secs   av.it.:  13.3
+      thresh= 4.312E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.112E-12
+
+      iter #   7 total cpu time :******** secs   av.it.:  13.3
+      thresh= 1.054E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.368E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  3 mode #   3
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  6.749E-10
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.9
+      thresh= 2.598E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.053E-10
+
+      iter #   3 total cpu time :******** secs   av.it.:  13.7
+      thresh= 1.026E-06 alpha_mix =  0.700 |ddv_scf|^2 =  9.555E-12
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.4
+      thresh= 3.091E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.970E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  4 mode #   4
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  6.749E-10
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.9
+      thresh= 2.598E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.053E-10
+
+      iter #   3 total cpu time :******** secs   av.it.:  13.7
+      thresh= 1.026E-06 alpha_mix =  0.700 |ddv_scf|^2 =  9.555E-12
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.4
+      thresh= 3.091E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.970E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  5 mode #   5
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.2
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.570E-09
+
+      iter #   2 total cpu time :******** secs   av.it.:  12.5
+      thresh= 7.463E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.182E-09
+
+      iter #   3 total cpu time :******** secs   av.it.:  12.1
+      thresh= 5.641E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.389E-11
+
+      iter #   4 total cpu time :******** secs   av.it.:  12.5
+      thresh= 5.821E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.493E-12
+
+      iter #   5 total cpu time :******** secs   av.it.:  12.1
+      thresh= 1.579E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.657E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  6 mode #   6
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.2
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.570E-09
+
+      iter #   2 total cpu time :******** secs   av.it.:  12.5
+      thresh= 7.463E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.182E-09
+
+      iter #   3 total cpu time :******** secs   av.it.:  12.1
+      thresh= 5.641E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.389E-11
+
+      iter #   4 total cpu time :******** secs   av.it.:  12.5
+      thresh= 5.821E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.493E-12
+
+      iter #   5 total cpu time :******** secs   av.it.:  12.1
+      thresh= 1.579E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.650E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+ 
+     Number of q in the star =    6
+     List of q in the star:
+          1   0.000000000   0.288675135   0.000000000
+          2   0.000000000  -0.288675135   0.000000000
+          3  -0.250000000   0.144337567   0.000000000
+          4  -0.250000000  -0.144337567   0.000000000
+          5   0.250000000  -0.144337567   0.000000000
+          6   0.250000000   0.144337567   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.288675135   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =      -0.404247 [THz] =     -13.484241 [cm-1]
+     freq (    2) =       0.530189 [THz] =      17.685192 [cm-1]
+     freq (    3) =       0.880827 [THz] =      29.381235 [cm-1]
+     freq (    4) =       1.848076 [THz] =      61.645177 [cm-1]
+     freq (    5) =       3.707506 [THz] =     123.669099 [cm-1]
+     freq (    6) =       3.935887 [THz] =     131.287069 [cm-1]
+ **************************************************************************
+
+     Mode symmetry, C_2v (mm2)  point group:
+
+     freq (  1 -  1) =        -13.5  [cm-1]   --> B_1  D_3  S_3      
+     freq (  2 -  2) =         17.7  [cm-1]   --> B_2  D_4  S_4      
+     freq (  3 -  3) =         29.4  [cm-1]   --> B_2  D_4  S_4      
+     freq (  4 -  4) =         61.6  [cm-1]   --> A_1  D_1  S_1      
+     freq (  5 -  5) =        123.7  [cm-1]   --> B_1  D_3  S_3      
+     freq (  6 -  6) =        131.3  [cm-1]   --> A_1  D_1  S_1      
+
+     Calculation of q =    0.0000000   0.3849002   0.0000000
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        1388    1388    395               594777   594777   89280
+     Max        1391    1391    398               594782   594782   89285
+     Sum        2779    2779    793              1189559  1189559  178565
+ 
+
+     Title: 
+     Phonon Dispersion of flat antimonene                                       
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =        10.00
+     number of Kohn-Sham states=           19
+     kinetic-energy cutoff     =     110.0000  Ry
+     charge density cutoff     =     440.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   9.585900  celldm(2)=   0.000000  celldm(3)=  10.008017
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000  10.008017 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.099920 )  
+
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Sb             5.00   121.76000     Sb( 1.00)
+
+     24 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Sb  tau(   1) = (   0.5000000   0.2886751   0.0000000  )
+         2           Sb  tau(   2) = (   0.0000000   0.5773503   0.0000000  )
+
+     number of k points=  2352  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:  1189559 G-vectors     FFT dimensions: (  72,  72, 648)
+
+     Estimated max dynamical RAM per process >       1.92 GB
+
+     Estimated total dynamical RAM >       3.84 GB
+
+     The potential is recalculated from file :
+     ./outdir/_ph0/antimonene_flat.save/charge-density
+
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     Starting wfcs are    8 atomic +   11 random wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  1.00E-10,  avg # of iterations = 67.0
+
+     total cpu time spent up to now is   642505.4 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    -4.1520 ev
+
+     Writing output data file ./outdir/_ph0/antimonene_flat.save/
+
+     Phonon Dispersion of flat antimonene                                       
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       9.5859  a.u.
+     unit-cell volume          =    7634.4429 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     kinetic-energy cut-off    =     110.0000  Ry
+     charge density cut-off    =     440.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    9.58590  celldm(2)=    0.00000  celldm(3)=   10.00802
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000 10.0080 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774  0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000  0.0000  0.0999 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     Sb 121.7600   tau(    1) = (    0.50000    0.28868    0.00000  )
+        2     Sb 121.7600   tau(    2) = (    0.00000    0.57735    0.00000  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.3849002   0.0000000 )
+ 
+      4 Sym.Ops. (no q -> -q+G )
+
+
+     G cutoff = 1024.1386  ( 594782 G-vectors)     FFT grid: ( 72, 72,648)
+
+     number of k points=  2352  Methfessel-Paxton smearing, width (Ry)=  0.1000
+
+     PseudoPot. # 1 for Sb read from file:
+     /home/ubuntu/quantum_espresso_2019/pslibrary.1.0.0/Sb.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d18e3983e67b3626a8ae63dba1d03fb4
+     Pseudo is Projector augmented-wave + core cor, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso v.6.5
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1243 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     Mode symmetry, C_2v (mm2)  point group:
+
+
+     Atomic displacements:
+     There are   6 irreducible representations
+
+     Representation     1      1 modes -A_1  D_1  S_1  To be done
+
+     Representation     2      1 modes -A_1  D_1  S_1  To be done
+
+     Representation     3      1 modes -B_1  D_3  S_3  To be done
+
+     Representation     4      1 modes -B_1  D_3  S_3  To be done
+
+     Representation     5      1 modes -B_2  D_4  S_4  To be done
+
+     Representation     6      1 modes -B_2  D_4  S_4  To be done
+
+
+
+     Alpha used in Ewald sum =   2.8000
+
+     negative rho (up, down):  7.034E-05 0.000E+00
+     PHONON       :  24d18h34m CPU  36d16h18m WALL
+
+
+
+     Representation #  1 mode #   1
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   5.5
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.052E-07
+
+      iter #   2 total cpu time :******** secs   av.it.:  14.0
+      thresh= 3.244E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.427E-06
+
+      iter #   3 total cpu time :******** secs   av.it.:  11.6
+      thresh= 1.851E-04 alpha_mix =  0.700 |ddv_scf|^2 =  5.994E-09
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.3
+      thresh= 7.742E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.680E-10
+
+      iter #   5 total cpu time :******** secs   av.it.:  13.2
+      thresh= 2.163E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.488E-11
+
+      iter #   6 total cpu time :******** secs   av.it.:  13.5
+      thresh= 3.857E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.372E-13
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  2 mode #   2
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   5.5
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.052E-07
+
+      iter #   2 total cpu time :******** secs   av.it.:  14.0
+      thresh= 3.244E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.427E-06
+
+      iter #   3 total cpu time :******** secs   av.it.:  11.6
+      thresh= 1.851E-04 alpha_mix =  0.700 |ddv_scf|^2 =  5.994E-09
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.3
+      thresh= 7.742E-06 alpha_mix =  0.700 |ddv_scf|^2 =  4.680E-10
+
+      iter #   5 total cpu time :******** secs   av.it.:  13.2
+      thresh= 2.163E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.488E-11
+
+      iter #   6 total cpu time :******** secs   av.it.:  13.5
+      thresh= 3.857E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.373E-13
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  3 mode #   3
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  7.605E-10
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.9
+      thresh= 2.758E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.396E-10
+
+      iter #   3 total cpu time :******** secs   av.it.:  13.6
+      thresh= 1.182E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.030E-11
+
+      iter #   4 total cpu time :******** secs   av.it.:  13.4
+      thresh= 3.210E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.056E-14
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #  4 mode #   4
+
+     Self-consistent Calculation
+
+      iter #   1 total cpu time :******** secs   av.it.:   4.6
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  7.605E-10
+
+      iter #   2 total cpu time :******** secs   av.it.:  13.9
+      thresh= 2.758E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.396E-10
+
+      iter #   3 total cpu time :******** secs   av.it.:  13.6
+      thresh= 1.182E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.030E-11
